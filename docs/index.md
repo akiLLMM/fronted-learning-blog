@@ -12,7 +12,6 @@ hero:
       link: /projects/ai-knowledge-workbench/
 
 ---
-
 <script setup>
 function getPosts(modules) {
   return Object.entries(modules)

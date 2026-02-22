@@ -30,7 +30,7 @@ vueTODOs
 npm create vite@latest vue-todos
 ```
 创建过程示例如下：
-![Vite 初始化命令](./images/vite_create_step.jpg)
+![Vite 初始化命令](images/vite_create_step.jpg)
 
 
 ## Step 4：选择框架与变体
@@ -43,7 +43,7 @@ npm create vite@latest vue-todos
 - Install dependencies：Yes
 
 配置选择界面示例：
-![Vite 初始化交互式选项](./images/framework_etc_options.jpg)
+![Vite 初始化交互式选项](images/framework_etc_options.jpg)
 
 ## Step 5：查看项目目录结构
 
