@@ -9,67 +9,45 @@ hero:
   actions:
     - theme: brand
       text: 🚀 View Main Project
-      link: /Projects/ai-knowledge-workbench/
+      link: /projects/ai-knowledge-workbench/
 
 ---
 
 <script setup>
-const sections = [
-  {
-    title: "🚀 Projects",
-    description: "Engineering-driven frontend systems and AI applications.",
-    items: [
-      {
-        name: "AI Knowledge Workbench",
-        desc: "Vue3 + RAG + MCP modular AI workspace",
-        link: "/projects/ai-knowledge-workbench/"
+function getPosts(modules) {
+  return Object.entries(modules)
+    .map(([filePath, module]) => {
+      const frontmatter =
+        module.__pageData?.frontmatter || {}
+
+      return {
+        title: frontmatter.title || "Untitled",
+        description: frontmatter.description || "",
+        date: frontmatter.date || "",
+        link: filePath
+          .replace("../", "/")
+          .replace(".md", "")
       }
-    ]
-  },
-  {
-    title: "🧠 Engineering Thinking",
-    description: "Architectural decisions and system-level abstractions.",
-    items: [
-      {
-        name: "State Management Design",
-        desc: "Layered state & composable architecture",
-        link: "/engineering/state-management/"
-      },
-      {
-        name: "Login Security Strategy",
-        desc: "Cookie, SameSite, CSRF analysis",
-        link: "/engineering/login-security/"
-      }
-    ]
-  },
-  {
-    title: "🛠 Tooling & Workflow",
-    description: "Engineering efficiency & workflow optimization.",
-    items: [
-      {
-        name: "Git Branch Strategy",
-        desc: "Feature branch & merge flow",
-        link: "/engineering/git-workflow/"
-      },
-      {
-        name: "Deployment Strategy",
-        desc: "GitHub Pages vs Vercel",
-        link: "/tooling/deploy-comparison/"
-      }
-    ]
-  },
-  {
-    title: "📦 Archive",
-    description: "Learning notes & early explorations.",
-    items: [
-      {
-        name: "TodoList Demo",
-        desc: "Component responsibility practice",
-        link: "/archive/todolist/"
-      }
-    ]
-  }
-]
+    })
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+}
+
+// ✅ glob 必须写死
+const projects = getPosts(
+  import.meta.glob("./notes/projects/ai-knowledge-workbench/**/*.md", { eager: true })
+)
+
+const engineering = getPosts(
+  import.meta.glob("./notes/engineering/**/*.md", { eager: true })
+)
+
+const tooling = getPosts(
+  import.meta.glob("./notes/tooling/**/*.md", { eager: true })
+)
+
+const archive = getPosts(
+  import.meta.glob("./notes/archive/**/*.md", { eager: true })
+)
 </script>
 
 <style>
@@ -80,12 +58,7 @@ const sections = [
 .section-title {
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.section-desc {
-  opacity: 0.6;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .card-grid {
@@ -117,25 +90,51 @@ const sections = [
   font-size: 14px;
   opacity: 0.6;
 }
+
+.card-date {
+  font-size: 12px;
+  opacity: 0.4;
+  margin-top: 8px;
+}
 </style>
 
-<div v-for="section in sections" :key="section.title" class="section">
-  <div class="section-title">{{ section.title }}</div>
-  <div class="section-desc">{{ section.description }}</div>
-
+<div class="section">
+  <div class="section-title">🚀 Projects</div>
   <div class="card-grid">
-    <a
-      v-for="item in section.items"
-      :key="item.name"
-      :href="item.link"
-      class="card"
-    >
-      <div class="card-title">{{ item.name }}</div>
-      <div class="card-desc">{{ item.desc }}</div>
+    <a v-for="item in projects" :key="item.link" :href="item.link" class="card">
+      <div class="card-title">{{ item.title }}</div>
+      <div class="card-desc">{{ item.description }}</div>
+      <div class="card-date">{{ item.date }}</div>
     </a>
   </div>
 </div>
 
-<footer style="margin-top: 80px; opacity: 0.5; font-size: 14px;">
-Building systems. Refining structure. Thinking in layers.
-</footer>
+<div class="section">
+  <div class="section-title">🧠 Engineering Thinking</div>
+  <div class="card-grid">
+    <a v-for="item in engineering" :key="item.link" :href="item.link" class="card">
+      <div class="card-title">{{ item.title }}</div>
+      <div class="card-desc">{{ item.description }}</div>
+    </a>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">🛠 Tooling & Workflow</div>
+  <div class="card-grid">
+    <a v-for="item in tooling" :key="item.link" :href="item.link" class="card">
+      <div class="card-title">{{ item.title }}</div>
+      <div class="card-desc">{{ item.description }}</div>
+    </a>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">📦 Archive</div>
+  <div class="card-grid">
+    <a v-for="item in archive" :key="item.link" :href="item.link" class="card">
+      <div class="card-title">{{ item.title }}</div>
+      <div class="card-desc">{{ item.description }}</div>
+    </a>
+  </div>
+</div>

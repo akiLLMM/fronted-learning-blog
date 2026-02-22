@@ -1,3 +1,10 @@
+---
+title: Reactive Data Flow and Component Responsibility Overview
+description: Based on a TodoList example project, this article summarizes reactive data flow, component responsibilities, and composable role separation in Vue 3, helping transition from simply writing code to understanding framework design principles.
+date: 2026-01-16
+category: archive
+
+---
 # Vue Todo 项目 · Day 2：响应式数据流与组件职责总结
 
 本文基于一个 TodoList 示例项目，总结了 Vue 3 中 **响应式数据流、组件分工以及 composable 的职责划分**，帮助我从“会写代码”走向“理解框架设计”。
@@ -221,4 +228,3 @@ Vuex / Pinia 主要用于解决以下场景：
 - 而是基于场景、规模和复杂度做出的判断
 
 > 工具本身没有对错，**合适才是最重要的。**
-

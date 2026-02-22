@@ -1,3 +1,10 @@
+---
+title: Project Initialization and Engineering Structure
+description: This article documents the complete process of creating the **`vue-todos` beginner project** using **Vite + Vue**, and summarizes a common issue encountered during the initialization process.
+date: 2026-01-15
+category: archive
+
+---
 # Vue Todos 项目 · Day 1：项目初始化与工程结构
 
 本文记录使用 **Vite + Vue** 创建 `vue-todos` 新手入门项目的完整流程，并整理了在初始化过程中遇到的一个常见坑点。
@@ -87,4 +94,3 @@ npm create vite@latest vue-todos
 - 项目初始化阶段的选择，会直接影响后续开发体验
 
 后续将基于该项目逐步实现 Todo 列表渲染、组件拆分与状态管理功能。
-

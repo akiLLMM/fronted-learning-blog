@@ -1,3 +1,11 @@
+---
+title: Git Tutorial
+description: Complete Git Workflow for Personal Projects
+date: 2026-01-14
+category: tooling
+
+---
+
 # 搭建个人博客：从 0 开始使用 WebStorm + VitePress
 
 本文记录从零开始，使用 **WebStorm + VitePress** 搭建个人博客的完整流程，适合前端新手作为长期学习博客的起点。

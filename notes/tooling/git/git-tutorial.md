@@ -1,3 +1,11 @@
+---
+title: Git Tutorial
+description: Complete Git Workflow for Personal Projects
+date: 2026-02-10
+category: tooling
+
+---
+
 # 个人项目 Git 完整闭环流程（推荐标准版）
 
 ---

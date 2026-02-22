@@ -1,3 +1,10 @@
+---
+title: Layout Layer, UI State, and Data Flow Optimization
+description: The project evolved from a simple list demo into an application with a structured layout architecture.
+date: 2026-01-17
+category: archive
+
+---
 # Vue Todo 项目 · Day 3: 布局层、 UI状态和数据流优化
 
 在 **Day 2** 中，我已经基于 TodoList 示例项目，梳理了 Vue 3 中：

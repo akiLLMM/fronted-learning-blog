@@ -1,3 +1,12 @@
+---
+title: MSW
+description: AI Project Mock Data
+date: 2026-01-24
+category: engineering
+
+---
+
+
 # 前端工程化 / AI 项目 mock 数据
 
 ---

@@ -1,3 +1,11 @@
+---
+title: Login Security Strategy
+description: Frontend Authentication Security, from XSS to CSRF
+date: 2026-02-07
+category: engineering
+
+---
+
 # 前端登录态安全，从 XSS 到 CSRF
 
 ---
@@ -69,11 +77,8 @@ SameSite 是 Cookie 的一个安全属性，用于限制 Cookie 在跨站请求�
 
 ---
 
-## 五、最终一句话总结（非常重要）
+## 五、总结
 
 > **HTTP-only Cookie 防的是 XSS，
 > SameSite 防的是 CSRF，
 > 二者配合，才能构成完整的登录态安全防线。**
-
-你现在已经不是“知道名词”，而是**理解了为什么这样设计**。
-这套逻辑，无论写博客还是面试，都是**高质量答案**。
