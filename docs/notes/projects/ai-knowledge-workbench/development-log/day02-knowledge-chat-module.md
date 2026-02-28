@@ -1,6 +1,6 @@
 ---
 title: Day 02 - Chat × Knowledge Data Flow Design
-description: This section explains the data flow design and responsibility boundaries between the **Chat** and **Knowledge** modules in the AI Knowledge Workbench. It focuses on system decoupling, scalability, and establishing stable interfaces for future RAG and LLM integration.
+description: This section explains the data flow design and responsibility boundaries between the Chat and Knowledge modules in the AI Knowledge Workbench. It focuses on system decoupling, scalability, and establishing stable interfaces for future RAG and LLM integration.
 date: 2026-01-20
 category: projects
 project: ai-knowledge-workbench

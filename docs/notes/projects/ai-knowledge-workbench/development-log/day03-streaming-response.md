@@ -1,6 +1,6 @@
 ---
 title: Day 03 - Streaming Assistant Response Design
-description: This section describes the design and implementation of **streaming Assistant responses** in the Chat module, with a focus on **architecture, state management, and evolvability**, rather than specific model integrations.
+description: This section describes the design and implementation of streaming Assistant responses in the Chat module, with a focus on architecture, state management, and evolvability, rather than specific model integrations.
 date: 2026-01-21
 category: projects
 project: ai-knowledge-workbench

@@ -1,6 +1,6 @@
 ---
 title: Project Initialization and Engineering Structure
-description: This article documents the complete process of creating the **`vue-todos` beginner project** using **Vite + Vue**, and summarizes a common issue encountered during the initialization process.
+description: This article documents the complete process of creating the vue-todos beginner project using Vite + Vue, and summarizes a common issue encountered during the initialization process.
 date: 2026-01-15
 category: archive
 

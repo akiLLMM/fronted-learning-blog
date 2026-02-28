@@ -1,6 +1,6 @@
 ---
 title: Day 06 - Dashboard Optimization
-description: Transforming the Dashboard from a **feature list page** into a **one-stop entry point for the core RAG workflow**.
+description: Transforming the Dashboard from a feature list page into a one-stop entry point for the core RAG workflow.
 date: 2026-02-02
 category: projects
 project: ai-knowledge-workbench
