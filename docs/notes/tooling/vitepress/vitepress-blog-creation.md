@@ -1,6 +1,6 @@
 ---
-title: Git Tutorial
-description: Complete Git Workflow for Personal Projects
+title: Blog Setup
+description: Documenting the setup, structure design and deployment workflow of a VitePress-based personal engineering blog.
 date: 2026-01-14
 category: tooling
 
