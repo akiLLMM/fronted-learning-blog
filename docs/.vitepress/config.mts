@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Aki Frontend Notes",
   description: "记录 Vue / JavaScript / 前端工程化的学习过程与踩坑经验",
-   base: "/fronted-learning-blog/",
+   base: "/frontend-learning-blog/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
