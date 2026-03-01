@@ -35,7 +35,7 @@ function getPosts(modules) {
 }
 
 const projects = getPosts(
-    import.meta.glob("../notes/projects/ai-knowledge-workbench/**/*.md", { eager: true })
+    import.meta.glob("../notes/projects/ai-knowledge-workbench/development-log/**/*.md", { eager: true })
 )
 
 const engineering = getPosts(

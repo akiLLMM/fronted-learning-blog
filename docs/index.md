@@ -9,7 +9,10 @@ hero:
   actions:
     - theme: brand
       text: View Main Project
-      link: /projects/ai-knowledge-workbench/
+      link: notes/projects/ai-knowledge-workbench/
+    - theme: alt
+      text: Live Demo
+      link: https://akillmm.github.io/kbench/
 
 ---
 
